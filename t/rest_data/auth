@@ -1,0 +1,2 @@
+$cmds{login}{cmd}="POST";
+$cmds{login}{headers}={'Content-Type' => 'application/json', 'Location' => '/some/session', 'X-Auth-Token' => 'testtoken'};

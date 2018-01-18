@@ -1,0 +1,6 @@
+$cmds{get}{cmd}="GET";
+$cmds{get}{result}={woo => 'hoo', 'SessionService' => {'@odata.id' => '/redfish/v1/SessionService'}};
+
+$cmds{post}{cmd}="POST https://fqdn/redfish/v1/SessionService/Sessions/";
+$cmds{post}{headers}={'Content-Type' => 'application/json', 'Special' => 123, 'Location' => 'something', 'X-Auth-Token' => 'testtoken'};
+
